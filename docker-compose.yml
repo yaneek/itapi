@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  api:
+    image: node:8
+    working_dir: /usr/src/packages/api/dist
+    volumes:
+      - .:/usr/src
+    command: node nodemon api.js
+    ports:
+      - 3000:3000

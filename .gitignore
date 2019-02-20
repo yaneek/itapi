@@ -1,0 +1,34 @@
+# macOS files
+.DS_STORE
+**/.DS_STORE
+
+# Vagrant files
+.vagrant
+
+# Docker compose override file
+docker-compose.override.yml
+
+# Node modules
+node_modules
+**/node_modules
+/node_modules_cache
+
+# Lerna error log
+lerna-debug.log
+
+# Yarn error logs
+yarn-error.log
+**/yarn-error.log
+
+# Packages dist files
+packages/**/dist
+
+# RC files
+/.*rc
+!/.prettierrc
+
+# Awesome typescript loader cache
+.awcache
+
+# Typescrpt compilation logs
+packages/**/compile.log

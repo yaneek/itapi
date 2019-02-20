@@ -1,0 +1,16 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "declaration": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "outDir": "./dist",
+    "paths": {
+      "*": ["./node_modules/*", "../../types/*"]
+    },
+    "target": "es6"
+  },
+  "include": ["./src"],
+  "exclude": ["./node_modules"]
+}

@@ -1,0 +1,24 @@
+version: '3'
+
+services:
+  util:
+    image: node:8
+    working_dir: /usr/src
+    volumes:
+      - .:/usr/src
+      - yarn_cache:/usr/local/share/.cache/yarn
+      - parent_node_modules:/usr/src/node_modules
+      - api_node_modules:/usr/src/packages/api/node_modules
+
+  api:
+    volumes:
+      - yarn_cache:/usr/local/share/.cache/yarn
+      - parent_node_modules:/usr/src/node_modules
+      - api_node_modules:/usr/src/packages/api/node_modules
+    command: node ../node_modules/.bin/nodemon api.js -L --delay 2 --watch ../compile.log
+
+volumes:
+  parent_node_modules:
+  core_node_modules:
+  api_node_modules:
+  yarn_cache:
