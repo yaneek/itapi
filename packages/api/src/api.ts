@@ -7,20 +7,6 @@ import faker = require('faker');
 
 const PORT = process.env.PORT || 3000;
 
-/**
-  {
-    "text": "Paryż",
-    "type": "object",
-    "additional": {
-        "url": "/city-break/francja/paryz,PARCITY.html",
-        "image": "https://i.content4travel.com/cms/img/u//hotel/m/parcity_0.jpg?version=180501-12",
-        "packageType": "city_break",
-        "packageCode": "PARCITY",
-        "canonicalDestinationTitle": "Francja, Paryż",
-        "standard": null
-    }
-  },
- */
 async function bootstrap() {
   const typeDefs = gql`
     scalar Date
