@@ -1,6 +1,6 @@
 {
-  "name": "techradar",
-  "displayName": "Tech radar",
+  "name": "itapi",
+  "displayName": "Incredible travel API",
   "version": "0.0.1",
   "private": true,
   "license": "UNLICENSED",
@@ -41,5 +41,9 @@
     "tslint-eslint-rules": "^5.4.0",
     "tslint-react": "^4.1.0",
     "typescript": "^3.7.4"
+  },
+  "resolutions": {
+    "set-value": "2.0.1",
+    "mixin-deep": "1.3.2"
   }
 }
